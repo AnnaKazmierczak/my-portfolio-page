@@ -1,0 +1,84 @@
+body{
+	margin-top: 10px;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	color: #000000;
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 16px;
+	text-align:center;
+}
+
+
+.container{
+	width: 100%;
+	margin-top:5px;
+	padding: 0;
+	/* margin-left: 2%; */
+	/*height: 1500px;*/
+	/*position:relative;*/
+	/* border: 1px solid #e8e8e8; */
+	/* margin-right: 2%; */
+}
+
+.header-image{
+	width:100%;
+	/* position: relative; */
+	/* margin-top: 50px; */
+}
+
+.banner {
+	max-width: 100%;
+	max-width: 100%;
+	width: 100%;
+}
+
+.nav {
+	/* float: right; */
+	text-align: right;
+	margin-right: 20px;
+}
+
+.navbar {
+	background: white;
+	border: none;
+	box-shadow: none;
+	margin-top: 0;
+	text-align: center;
+	font-size: large;
+}
+
+
+/*.text{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}*/
+
+.thumbnail{
+	border:none;
+	box-shadow: none;
+
+}
+a .button {
+	color:white;
+}
+/*
+.navbar .container-fluid .collapse .nav .button {
+	color:white;
+}
+
+.navbar-default a {
+    color: #fff;
+}*/
+
+/*#con .well {
+    height:400px;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}*/
+
