@@ -5,21 +5,13 @@ ngApp.directive('changeLanguage', function(){
 		templateUrl: 'components/change-language/language.html',
 		restrict: 'E',
 		scope: {}, 
-		controller: function($scope, gettextCatalog){
+		controller: function($scope, languageFactory){
 			$scope.changeLanguage = function(language){
-			gettextCatalog.setCurrentLanguage(language);
-			document.title = gettextCatalog.getString('My Page - Ania Kazmierczak')
+				languageFactory.setActiveLanguage(language);
 			}
-			$scope.languageList = [
-			{	
-					code:'pl',
-					label:'Polski'
-				},
-				{
-					code:'en',
-					label:'English'
-				}
-			];
+			$scope.languageList = languageFactory.languages;
+
+			
 		}
 	}
 });
@@ -32,6 +24,7 @@ ngApp.directive('changeLanguageImg', function () {
             $scope.changeLanguage = function(language){
                 gettextCatalog.setCurrentLanguage(language);
             };
+
             $scope.languageList = [
                 {
                     code: 'pl',
