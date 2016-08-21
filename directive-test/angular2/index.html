@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="filters.js"></script>
+    <script type="text/javascript" src="directives.js"></script>
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap-tpls.min.js"></script>
+</head>
+<body ng-app="myApp">
+
+    <div ng-controller="MainController">
+
+        <input type ="text" ng-model="inputText" >
+        <input type="text" ng-model="filterMark">
+        <button ng-click="clearInput()">CLEAR INPUT</button>
+        <button ng-click="submit()">SUBMIT</button>
+
+        <p>{{alienText}}</p>
+        <p>{{alienText | specialFilter}}</p>
+
+        <p>{{alienText | moreSpecialFilter:filterMark}}</p> 
+
+
+
+<!-- TABELA -->
+        <table class=table>
+            <thead>
+                <tr>
+                    <th ng-click="sortBy = 'name' ; sortReverse = !sortReverse">IMIĘ</th>
+                    <th ng-click="sortBy = 'eyeColor'">KOLOR OCZU</th>
+                    <th ng-click="sortBy = 'gender'">PŁEć</th>
+                </tr>
+                 <tr>
+                    <th><input type="text" ng-model="search.name"></th>
+                    <th><input type="text" ng-model="search.eyeColor"> </th>
+                    <th><input type="text" ng-model="search.gender"> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="person in personArray | filter:search | orderBy:sortBy:sortReverse | limitTo:count:start"> 
+                    <td>{{person.name}}</td>
+                    <td>{{person.eyeColor}}</td>
+                    <td>{{person.gender}}</td>
+
+                </tr>
+            </tbody>
+       </table>
+       <button ng-click="start=start-5">PREVIOUS</button>
+       <button ng-click="start=start+5">NEXT</button>
+
+<!-- NASZA DYREKTYWA -->
+<!-- w directives camel case personTable, ale w htm tagi s a z malej, wiec zapisujemy person-table-->
+    <person-table></person-table>
+
+
+
+       
+    </div>
+    
+</body>
+</html>

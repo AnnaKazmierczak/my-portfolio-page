@@ -35,7 +35,6 @@ body{
 }
 
 .nav {
-	/* float: right; */
 	text-align: right;
 	margin-right: 20px;
 }
@@ -50,10 +49,6 @@ body{
 }
 
 
-/*.text{
-	margin-top: 30px;
-	margin-bottom: 30px;
-}*/
 
 .thumbnail{
 	border:none;
@@ -63,22 +58,4 @@ body{
 a .button {
 	color:white;
 }
-/*
-.navbar .container-fluid .collapse .nav .button {
-	color:white;
-}
-
-.navbar-default a {
-    color: #fff;
-}*/
-
-/*#con .well {
-    height:400px;
-}
-
-#nav.affix {
-    position: fixed;
-    top: 0;
-    width: 100%
-}*/
 

@@ -1,0 +1,178 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grunt',
+1 verbose cli   '@0.4.1',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose install initial load of E:\sciagniete\strona portfolio\package.json
+5 warn package.json stronaportfolio@1.0.0 No description
+6 warn package.json stronaportfolio@1.0.0 No repository field.
+7 warn package.json stronaportfolio@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from E:\sciagniete\strona portfolio\node_modules\angular-gettext\package.json
+9 verbose installManyTop reading scoped package data from E:\sciagniete\strona portfolio\node_modules\angular-scroll\package.json
+10 verbose installManyTop reading scoped package data from E:\sciagniete\strona portfolio\node_modules\angular-smooth-scrollbar\package.json
+11 verbose installManyTop reading scoped package data from E:\sciagniete\strona portfolio\node_modules\angular-ui-router\package.json
+12 verbose installManyTop reading scoped package data from E:\sciagniete\strona portfolio\node_modules\font-awesome-animation\package.json
+13 verbose installManyTop reading scoped package data from E:\sciagniete\strona portfolio\node_modules\grunt\package.json
+14 verbose installManyTop reading scoped package data from E:\sciagniete\strona portfolio\node_modules\grunt-angular-gettext\package.json
+15 verbose installManyTop reading scoped package data from E:\sciagniete\strona portfolio\node_modules\grunt-contrib-less\package.json
+16 verbose installManyTop reading scoped package data from E:\sciagniete\strona portfolio\node_modules\grunt-serve\package.json
+17 verbose installManyTop reading scoped package data from E:\sciagniete\strona portfolio\node_modules\jquery\package.json
+18 verbose installManyTop reading scoped package data from E:\sciagniete\strona portfolio\node_modules\lightgallery\package.json
+19 verbose installManyTop reading scoped package data from E:\sciagniete\strona portfolio\node_modules\lodash\package.json
+20 info package.json grunt-serve@0.1.6 No license field.
+21 info package.json font-awesome-animation@0.0.8 No repository field.
+22 info package.json font-awesome-animation@0.0.8 No license field.
+23 info package.json grunt@0.4.5 No license field.
+24 info package.json grunt-angular-gettext@2.2.3 No license field.
+25 verbose readDependencies loading dependencies from E:\sciagniete\strona portfolio\package.json
+26 verbose install grunt is installed as 0.4.5
+27 silly cache add args [ 'grunt@^0.4.5', null ]
+28 verbose cache add spec grunt@^0.4.5
+29 silly cache add args [ '@0.4.1', null ]
+30 verbose cache add spec @0.4.1
+31 silly cache add parsed spec Result {
+31 silly cache add   raw: 'grunt@^0.4.5',
+31 silly cache add   scope: null,
+31 silly cache add   name: 'grunt',
+31 silly cache add   rawSpec: '^0.4.5',
+31 silly cache add   spec: '>=0.4.5 <0.5.0',
+31 silly cache add   type: 'range' }
+32 silly addNamed grunt@>=0.4.5 <0.5.0
+33 verbose addNamed ">=0.4.5 <0.5.0" is a valid semver range for grunt
+34 silly addNameRange { name: 'grunt', range: '>=0.4.5 <0.5.0', hasData: false }
+35 silly mapToRegistry name grunt
+36 silly mapToRegistry using default registry
+37 silly mapToRegistry registry https://registry.npmjs.org/
+38 silly mapToRegistry data Result {
+38 silly mapToRegistry   raw: 'grunt',
+38 silly mapToRegistry   scope: null,
+38 silly mapToRegistry   name: 'grunt',
+38 silly mapToRegistry   rawSpec: '',
+38 silly mapToRegistry   spec: 'latest',
+38 silly mapToRegistry   type: 'tag' }
+39 silly mapToRegistry uri https://registry.npmjs.org/grunt
+40 verbose addNameRange registry:https://registry.npmjs.org/grunt not in flight; fetching
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: '@0.4.1',
+41 silly cache add   scope: null,
+41 silly cache add   name: null,
+41 silly cache add   rawSpec: '@0.4.1',
+41 silly cache add   spec: 'E:\\sciagniete\\strona portfolio\\@0.4.1',
+41 silly cache add   type: 'local' }
+42 error addLocal Could not install E:\sciagniete\strona portfolio\@0.4.1
+43 verbose request uri https://registry.npmjs.org/grunt
+44 verbose request no auth needed
+45 info attempt registry request try #1 at 10:05:03 AM
+46 verbose request id 2f9c553a3517fdf3
+47 verbose etag "5HFH7HE0V61T2YPF9JLUSM8VM"
+48 http request GET https://registry.npmjs.org/grunt
+49 http 304 https://registry.npmjs.org/grunt
+50 verbose headers { date: 'Sun, 21 Aug 2016 08:05:11 GMT',
+50 verbose headers   via: '1.1 varnish',
+50 verbose headers   'cache-control': 'max-age=300',
+50 verbose headers   etag: '"5HFH7HE0V61T2YPF9JLUSM8VM"',
+50 verbose headers   age: '178',
+50 verbose headers   connection: 'keep-alive',
+50 verbose headers   'x-served-by': 'cache-fra1237-FRA',
+50 verbose headers   'x-cache': 'HIT',
+50 verbose headers   'x-cache-hits': '1',
+50 verbose headers   'x-timer': 'S1471766711.680864,VS0,VE0',
+50 verbose headers   vary: 'Accept-Encoding' }
+51 silly get cb [ 304,
+51 silly get   { date: 'Sun, 21 Aug 2016 08:05:11 GMT',
+51 silly get     via: '1.1 varnish',
+51 silly get     'cache-control': 'max-age=300',
+51 silly get     etag: '"5HFH7HE0V61T2YPF9JLUSM8VM"',
+51 silly get     age: '178',
+51 silly get     connection: 'keep-alive',
+51 silly get     'x-served-by': 'cache-fra1237-FRA',
+51 silly get     'x-cache': 'HIT',
+51 silly get     'x-cache-hits': '1',
+51 silly get     'x-timer': 'S1471766711.680864,VS0,VE0',
+51 silly get     vary: 'Accept-Encoding' } ]
+52 verbose etag https://registry.npmjs.org/grunt from cache
+53 verbose get saving grunt to C:\Users\Ania\AppData\Roaming\npm-cache\registry.npmjs.org\grunt\.cache.json
+54 verbose correctMkdir C:\Users\Ania\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+55 silly addNameRange number 2 { name: 'grunt', range: '>=0.4.5 <0.5.0', hasData: true }
+56 silly addNameRange versions [ 'grunt',
+56 silly addNameRange   [ '0.1.0',
+56 silly addNameRange     '0.1.1',
+56 silly addNameRange     '0.1.2',
+56 silly addNameRange     '0.2.0',
+56 silly addNameRange     '0.2.1',
+56 silly addNameRange     '0.2.2',
+56 silly addNameRange     '0.2.3',
+56 silly addNameRange     '0.2.4',
+56 silly addNameRange     '0.2.5',
+56 silly addNameRange     '0.2.6',
+56 silly addNameRange     '0.2.7',
+56 silly addNameRange     '0.2.8',
+56 silly addNameRange     '0.2.9',
+56 silly addNameRange     '0.2.10',
+56 silly addNameRange     '0.2.11',
+56 silly addNameRange     '0.2.12',
+56 silly addNameRange     '0.2.13',
+56 silly addNameRange     '0.2.14',
+56 silly addNameRange     '0.2.15',
+56 silly addNameRange     '0.3.0',
+56 silly addNameRange     '0.3.1',
+56 silly addNameRange     '0.3.2',
+56 silly addNameRange     '0.3.3',
+56 silly addNameRange     '0.3.4',
+56 silly addNameRange     '0.3.5',
+56 silly addNameRange     '0.3.6',
+56 silly addNameRange     '0.3.7',
+56 silly addNameRange     '0.3.8',
+56 silly addNameRange     '0.3.9',
+56 silly addNameRange     '0.3.10',
+56 silly addNameRange     '0.3.11',
+56 silly addNameRange     '0.3.12',
+56 silly addNameRange     '0.3.13',
+56 silly addNameRange     '0.3.14',
+56 silly addNameRange     '0.3.15',
+56 silly addNameRange     '0.3.16',
+56 silly addNameRange     '0.3.17',
+56 silly addNameRange     '0.4.0',
+56 silly addNameRange     '0.4.1',
+56 silly addNameRange     '0.4.2',
+56 silly addNameRange     '0.4.3',
+56 silly addNameRange     '0.4.4',
+56 silly addNameRange     '0.4.5',
+56 silly addNameRange     '1.0.0-rc1',
+56 silly addNameRange     '1.0.0',
+56 silly addNameRange     '1.0.1',
+56 silly addNameRange     '0.3.13-a',
+56 silly addNameRange     '0.4.0-a',
+56 silly addNameRange     '0.4.0-rc1',
+56 silly addNameRange     '0.4.0-rc2',
+56 silly addNameRange     '0.4.0-rc3',
+56 silly addNameRange     '0.4.0-rc4',
+56 silly addNameRange     '0.4.0-rc5',
+56 silly addNameRange     '0.4.0-rc6',
+56 silly addNameRange     '0.4.0-rc7',
+56 silly addNameRange     '0.4.0-rc8' ] ]
+57 silly addNamed grunt@0.4.5
+58 verbose addNamed "0.4.5" is a plain semver version for grunt
+59 silly cache afterAdd grunt@0.4.5
+60 verbose afterAdd C:\Users\Ania\AppData\Roaming\npm-cache\grunt\0.4.5\package\package.json not in flight; writing
+61 verbose correctMkdir C:\Users\Ania\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+62 verbose afterAdd C:\Users\Ania\AppData\Roaming\npm-cache\grunt\0.4.5\package\package.json written
+63 verbose stack Error: ENOENT: no such file or directory, open 'E:\sciagniete\strona portfolio\@0.4.1'
+63 verbose stack     at Error (native)
+64 verbose cwd E:\sciagniete\strona portfolio
+65 error Windows_NT 10.0.10240
+66 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt" "@0.4.1" "--save"
+67 error node v4.4.7
+68 error npm  v2.15.8
+69 error path E:\sciagniete\strona portfolio\@0.4.1
+70 error code ENOENT
+71 error errno -4058
+72 error syscall open
+73 error enoent ENOENT: no such file or directory, open 'E:\sciagniete\strona portfolio\@0.4.1'
+73 error enoent This is most likely not a problem with npm itself
+73 error enoent and is related to npm not being able to find a file.
+74 verbose exit [ -4058, true ]

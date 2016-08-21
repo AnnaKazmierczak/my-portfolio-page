@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio Site</title>
+    <title>Anna Kazmierczak - portfolio site</title>
     <link href='http://fonts.googleapis.com/css?family=Arima+Madurai&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="node_modules/angular-gettext/dist/angular-gettext.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap.min.js"></script>
@@ -18,31 +19,49 @@
     <script type="text/javascript" src="lib/angular-scroll.min.js"></script>
     <script src="lib/lightgallery.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="translations.js"></script>
+    <script type="text/javascript" src="components/navigation/navigation.js"></script>
+    <script type="text/javascript" src="components/aboutme/aboutme.js"></script>
+    <script type="text/javascript" src="components/skills-and-plans/skills.js"></script>
+    <script type="text/javascript" src="components/portfolio/portfolio.js"></script>
+    <script type="text/javascript" src="components/cooperation/cooperation.js"></script>
+    <script type="text/javascript" src="components/contact/contact.js"></script>
+    <script type="text/javascript" src="components/footer/footer.js"></script>
+    <script type="text/javascript" src="components/change-language/language.js"></script>
     <link type="text/css" rel="stylesheet" href="assets/style/lightgallery.css" />
     <link rel="stylesheet" href="assets/style/font-awesome-animation.min.css">
     <link type="text/css" rel="stylesheet" href="assets/style/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/style/app.css">
 
-    
+   
 </head>
 <body>
    
     <div class="container" ng-app='testApp'>
-    <<!-- div ng-include="'components/navigation/navigation.html'"></div>  -->
         <div class="header-image" id="header-image">
             <img src="assets/photos/yellow.jpg" class="banner">
-          <!-- w navigation html jest ta navigacja -->
-            <div ng-include="'components/navigation/navigation.html'"></div> 
-            <div ng-include="'components/aboutme/aboutme.html'"></div> 
-            <div ng-include="'components/skills-and-plans/skills-and-plans.html'"></div> 
-            <div ng-include="'components/portfolio/portfolio.html'"></div> 
-            <div ng-include="'components/cooperation/cooperation.html'"></div> 
-            <div ng-include="'components/contact/contact.html'"></div> 
-            <div ng-include="'components/footer/footer.html'"></div> 
+
+            <!-- COMPONENTS -->
+            <!-- <div ng-include="'components/navigation/navigation.html'"></div> --> 
+            <!-- <div ng-include="'components/aboutme/aboutme.html'"></div>  -->
+            <!-- <div ng-include="'components/skills-and-plans/skills-and-plans.html'"></div>  -->
+            <!-- <div ng-include="'components/portfolio/portfolio.html'"></div> -->
+            <!-- <div ng-include="'components/cooperation/cooperation.html'"></div>  -->
+            <!--  <div ng-include="'components/contact/contact.html'"></div>  -->
+            <!--  <div ng-include="'components/footer/footer.html'"></div>  -->
+
+            <!-- DIRECTIVES -->
+            <navigation></navigation>
+            <about-me></about-me>
+            <skills></skills>
+            <portfolio></portfolio>
+            <cooperation></cooperation>
+            <contact></contact>
+            <footer></footer>
         </div>
 
-      <!-- tu pojawia sie okienko gdzie wyswietlaja sie  -->
-       <!--  <div ui-view></div> -->
+      <!-- tu pojawia sie okienko gdzie wyswietlaja sie jeżeli strona z zakladkami i ma sie zmieniac widok w glownym okienku -->
+       <!--  <div ui-view></div> -->  
 
 
 <!-- from: http://sachinchoolur.github.io/lightGallery/docs/#installation -->
