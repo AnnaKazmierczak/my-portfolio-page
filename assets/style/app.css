@@ -107,3 +107,7 @@
 .footer .heart {
   color: red;
 }
+.language-select {
+  font-size: 12px;
+  text-align: center;
+}

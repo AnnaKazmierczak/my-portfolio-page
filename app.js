@@ -6,9 +6,10 @@
     });
 
 // tworzymy modul anularowy
-var app = angular.module("testApp", ['ui.router', 'duScroll' ]); // 
+var ngApp = angular.module("testApp", ['ui.router', 'duScroll', 'gettext' ]); // w[] ladujemy biblioteki ktore tutaj ladujemy np ui.router
+//ladujemy moduky zewnetrzen do naszego angulara
 
-app.config(function($stateProvider, $urlRouterProvider){ // konfigurujemy
+ngApp.config(function($stateProvider, $urlRouterProvider){ // konfigurujemy
 	$urlRouterProvider // info o pierwszej stronie (jezeli nie mam zaznaczonego stanu to wtedy wyswietla ta strone - najlepiej pierwsza, landing page)
 		.otherwise('/aboutme');
 
@@ -32,7 +33,11 @@ app.config(function($stateProvider, $urlRouterProvider){ // konfigurujemy
 		
 });
 
-app.controller('testController', function ($scope){
+ngApp.run(function (gettextCatalog) {
+    gettextCatalog.setCurrentLanguage('en'); // wstawiamy jezyk startowy
+});
+
+ngApp.controller('testController', function ($scope){  //definiujemy controller
 	$scope.test = 'test';
 });
 

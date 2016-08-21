@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: components/aboutme/aboutme.html:4
+#: components/navigation/navigation.html:6
+msgid "ABOUT ME"
+msgstr ""
+
+#: components/navigation/navigation.html:10
+msgid "CONTACT"
+msgstr ""
+
+#: components/contact/contact.html:7
+msgid "CONTACT ME!"
+msgstr ""
+
+#: components/cooperation/cooperation.html:2
+#: components/navigation/navigation.html:9
+msgid "COOPERATION"
+msgstr ""
+
+#: components/footer/footer.html:6
+msgid "Designed with"
+msgstr ""
+
+#: components/change-language/language.html:2
+msgid "Language"
+msgstr ""
+
+#: components/change-language/language.js:11
+msgid "My Page - Ania Kazmierczak"
+msgstr ""
+
+#: components/skills-and-plans/skills-and-plans.html:16
+msgid "PLANS"
+msgstr ""
+
+#: components/navigation/navigation.html:8
+#: components/portfolio/portfolio.html:5
+msgid "PORTFOLIO"
+msgstr ""
+
+#: components/skills-and-plans/skills-and-plans.html:6
+msgid "SKILLS"
+msgstr ""
+
+#: components/navigation/navigation.html:7
+msgid "SKILLS PLANS"
+msgstr ""
+
+#: components/contact/contact.html:23
+msgid "You can find me here"
+msgstr ""

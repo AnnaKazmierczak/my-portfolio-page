@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.8\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+
+#: components/aboutme/aboutme.html:4
+msgid "ABOUT ME"
+msgstr "ABOUT ME"
+
+#: components/skills-and-plans/skills-and-plans.html:16
+msgid "PLANS"
+msgstr "PLANS"
+
+#: components/portfolio/portfolio.html:5
+msgid "PORTFOLIO"
+msgstr "PORTFOLIO"
+
+#: components/skills-and-plans/skills-and-plans.html:6
+msgid "SKILLS"
+msgstr "SKILLS"
